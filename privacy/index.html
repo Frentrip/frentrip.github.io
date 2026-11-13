@@ -28,7 +28,7 @@
 <h2 id="the-short-version">The short version</h2>
 <ul>
 <li>We collect what the app needs to work: your name, email, a username, the trips you plan, and the messages you send in them.</li>
-<li>We do not sell your information. We do not show ads. We do not track you across other companies' apps or websites. There are no analytics or advertising tools in the app.</li>
+<li>We do not sell your information. We do not show ads. We do not track you across other companies' apps or websites. There are no advertising or tracking tools in the app. When the app crashes or something goes wrong, it sends a technical report to Expo so we can fix it, without your name, email or messages.</li>
 <li>If you use "Find friends from your contacts", your contacts' email addresses are scrambled on your phone before anything is sent, and we do not keep them.</li>
 </ul>
 <h2 id="what-we-collect-and-why">What we collect, and why</h2>
@@ -63,8 +63,17 @@
 </ol>
 <p>A hash is not the same as anonymity: anyone who already knows a particular email address could check whether it belongs to someone on Frentrip. That is why the limits exist, and why you can opt out.</p>
 <p><strong>Being found.</strong> By default, someone who has your email address in their contacts can find you this way. To stop it, turn off <strong>"Let people find me by email"</strong> on your profile. When it is off we delete the hash of your email, so you cannot be matched at all.</p>
+<h3 id="crash-and-error-reports">Crash and error reports</h3>
+<p>When the app crashes, or something fails that should not (a screen that will not load, a notification that cannot be set up), the app sends a report to <strong>Expo</strong>, the company whose tools Frentrip is built with, so we can find and fix the problem. A report contains:</p>
+<ul>
+<li>what went wrong: the error message and where in the app's code it happened</li>
+<li>which kind of screen you were on (for example "a trip's messages", not which trip), how long screens took to load, and short technical notes about what the app was doing just before</li>
+<li>your device model, operating system, app version and language setting</li>
+<li>a random ID created when the app was installed, so we can tell whether one problem keeps happening on the same device. It is not linked to your account.</li>
+</ul>
+<p>Reports do not include your name, email address, username, messages, search text or anything else you typed. They are used only to keep the app working, never for advertising or to build a profile of you.</p>
 <h3 id="what-we-do-not-collect">What we do not collect</h3>
-<p>We do not collect your location, your photos, your phone number, payment information, browsing history, or advertising identifiers. The app contains no analytics, advertising or crash-reporting tools.</p>
+<p>We do not collect your location, your photos, your phone number, payment information, browsing history, or advertising identifiers. The app contains no advertising or tracking tools.</p>
 <h3 id="technical-logs">Technical logs</h3>
 <p>Like any online service, the servers that run Frentrip record basic technical information about each request, such as IP address, time and the kind of device or browser. These logs are used to keep the service running and secure, and are deleted automatically after a short period.</p>
 <h2 id="who-else-handles-your-information">Who else handles your information</h2>
@@ -83,7 +92,7 @@
 </tr>
 <tr class="even">
 <td><strong>Expo</strong> (650 Industries)</td>
-<td>Delivers app updates and relays push notifications</td>
+<td>Delivers app updates, relays push notifications, and receives crash and error reports</td>
 </tr>
 <tr class="odd">
 <td><strong>Apple</strong> (Push Notification service)</td>

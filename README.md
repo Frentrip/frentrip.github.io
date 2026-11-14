@@ -4,13 +4,14 @@ Frentrip's public pages, served by GitHub Pages.
 
 ## Generated pages
 
-Two pages are generated from markdown in Frentrip/frentrip3. Change the text
+Three pages are generated from markdown in Frentrip/frentrip3. Change the text
 there, then regenerate the page here. Do not edit the text here.
 
 | Page                                                                     | Source in frentrip3              |
 | ------------------------------------------------------------------------ | -------------------------------- |
 | `privacy/index.html` (https://frentrip.github.io/privacy/)               | `docs/legal/privacy-policy.md`   |
 | `delete-account/index.html` (https://frentrip.github.io/delete-account/) | `docs/legal/account-deletion.md` |
+| `terms/index.html` (https://frentrip.github.io/terms/)                   | `docs/legal/terms-of-use.md`     |
 
 In each page, everything between the `<main>` and `</main>` lines is generated
 with pandoc 3.1.3:
@@ -20,7 +21,7 @@ pandoc -f gfm -t html5 --wrap=none <source.md>
 ```
 
 Use exactly that version: another may render the same markdown differently. The
-rest of each file (head, styles) is hand-written. Both pages share the same head
+rest of each file (head, styles) is hand-written. All three pages share the same head
 and styles; only `<title>` and the `description` meta differ. Keep the styles in
 step when you change one.
 

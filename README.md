@@ -1,17 +1,18 @@
 # frentrip.github.io
 
-Frentrip's public pages, served by GitHub Pages.
+Frentrip's public pages, served by GitHub Pages at https://frentrip.com (the
+old frentrip.github.io addresses redirect there; `CNAME` holds the domain).
 
 ## Generated pages
 
 Three pages are generated from markdown in Frentrip/frentrip3. Change the text
 there, then regenerate the page here. Do not edit the text here.
 
-| Page                                                                     | Source in frentrip3              |
-| ------------------------------------------------------------------------ | -------------------------------- |
-| `privacy/index.html` (https://frentrip.github.io/privacy/)               | `docs/legal/privacy-policy.md`   |
-| `delete-account/index.html` (https://frentrip.github.io/delete-account/) | `docs/legal/account-deletion.md` |
-| `terms/index.html` (https://frentrip.github.io/terms/)                   | `docs/legal/terms-of-use.md`     |
+| Page                                                               | Source in frentrip3              |
+| ------------------------------------------------------------------ | -------------------------------- |
+| `privacy/index.html` (https://frentrip.com/privacy/)               | `docs/legal/privacy-policy.md`   |
+| `delete-account/index.html` (https://frentrip.com/delete-account/) | `docs/legal/account-deletion.md` |
+| `terms/index.html` (https://frentrip.com/terms/)                   | `docs/legal/terms-of-use.md`     |
 
 In each page, everything between the `<main>` and `</main>` lines is generated
 with pandoc 3.1.3:

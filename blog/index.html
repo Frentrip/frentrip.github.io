@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frentrip Blog</title>
+<meta name="description" content="News and stories from Frentrip: planning trips with your friends.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Frentrip">
+<meta property="og:title" content="Frentrip Blog">
+<meta property="og:description" content="News and stories from Frentrip: planning trips with your friends.">
+<meta property="og:url" content="https://frentrip.com/blog/">
+<meta property="og:image" content="https://frentrip.com/assets/og-image.png">
+<!--
+  Hand-written. Same colours and type as the legal pages. To add a post, put it
+  at blog/<slug>/index.html with this head, and add an <li> to the list below,
+  newest first (remove the "No posts yet" line with the first one).
+-->
+<style>
+  :root { color-scheme: light dark; --bg:#FFF9F6; --fg:#1f1d1a; --muted:#5c5852; --line:#e7e0da; --accent:#11797A; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12110F; --fg:#ece8e3; --muted:#a8a29b; --line:#2c2925; --accent:#4fb8b9; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  header { max-width:44rem; margin:0 auto; padding:1.5rem 1rem 0; }
+  header img { display:block; width:10rem; height:auto; }
+  main { max-width:44rem; margin:0 auto; padding:1.5rem 1rem 4rem; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .5rem; }
+  .lede { color:var(--muted); margin:0 0 2rem; }
+  a { color:var(--accent); }
+  .posts { list-style:none; padding:0; margin:0; border-top:1px solid var(--line); }
+  .posts li { padding:1rem 0; border-bottom:1px solid var(--line); }
+  .posts time { display:block; color:var(--muted); font-size:.875rem; }
+  .empty { color:var(--muted); }
+  footer { max-width:44rem; margin:0 auto; padding:0 1rem 2.5rem; font-size:.875rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <a href="/" aria-label="Frentrip home">
+    <picture>
+      <source srcset="/assets/banner-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="/assets/banner-light.png" width="1200" height="315" alt="Frentrip">
+    </picture>
+  </a>
+</header>
+<main>
+  <h1>Blog</h1>
+  <p class="lede">News and stories from Frentrip.</p>
+  <ul class="posts">
+    <li class="empty">No posts yet. Check back soon.</li>
+  </ul>
+</main>
+<footer>
+  <a href="/">Home</a> · <a href="/privacy/">Privacy policy</a> · <a href="/terms/">Terms of Use</a>
+</footer>
+</body>
+</html>

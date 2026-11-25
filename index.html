@@ -49,7 +49,14 @@ a{color:var(--brand)}
   </picture>
   <p class="tagline">Plan trips with your friends.</p>
   <p class="soon">Coming soon to iPhone and Android.</p>
-  <a class="open" href="https://app.frentrip.com/">Already invited? Open Frentrip</a>
+  <!--
+    A path the installed app claims (frentrip3 apps/mobile/app.json and
+    public/.well-known), so a tap opens the app on a phone that has it and the
+    web app otherwise. Store build 1.3.8 claims frentrip.expo.app only; switch
+    to https://app.frentrip.com/trips/ once most people have 1.3.9, which also
+    claims app.frentrip.com (frentrip3 docs/release-checklist.md, step 10.6).
+  -->
+  <a class="open" href="https://frentrip.expo.app/trips/">Already invited? Open Frentrip</a>
   <nav><a href="privacy/">Privacy policy</a> · <a href="terms/">Terms of Use</a> · <a href="delete-account/">Delete your account</a></nav>
 </main>
 </body>

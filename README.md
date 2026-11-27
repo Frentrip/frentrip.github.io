@@ -38,3 +38,25 @@ close=$(grep -nx '</main>' "$page" | cut -d: -f1)
   pandoc -f gfm -t html5 --wrap=none "$src"
   sed -n "${close},\$p" "$page"; } > "$page.new" && mv "$page.new" "$page"
 ```
+
+### Checked by frentrip3
+
+frentrip3's `Legal pages` workflow (`.github/workflows/legal-pages.yml`)
+re-renders the three sources with pandoc 3.1.3 and compares the result with
+this repo's `main`. It compares only the generated part, between the `<main>`
+and `</main>` lines; the head and styles are not checked. Keep those two marker
+lines exactly as they are (no indent): without them the check cannot run.
+
+It runs on merges to frentrip3 `main` that change one of the three sources (or
+the check), weekly, and on demand. A merge here does not start it, so after
+merging a regenerated page, run it again in frentrip3 (Actions → Legal pages →
+Run workflow) to confirm it is green. It never runs on PRs or blocks a merge.
+
+To check by hand, from a frentrip3 checkout beside this repo:
+
+```sh
+node scripts/check-legal-pages.mjs ../frentrip.github.io
+```
+
+It needs pandoc 3.1.3 on the PATH (or its path in `PANDOC`), and exits 0 when
+all three pages match, 1 when one differs, and 2 when it cannot check.
